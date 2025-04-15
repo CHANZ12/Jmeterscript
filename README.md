@@ -1,5 +1,13 @@
 # Jmeterscript
 
+enkins used a cron expression (official documentation), and the different fields are:
+
+MINUTES Minutes in one hour (0-59)
+HOURS Hours in one day (0-23)
+DAYMONTH Day in a month (1-31)
+MONTH Month in a year (1-12)
+DAYWEEK Day of the week (0-7) where 0 and 7 are sunday
+
 Microsoft Windows [Version 10.0.20348.3207]
 (c) Microsoft Corporation. All rights reserved.
 
