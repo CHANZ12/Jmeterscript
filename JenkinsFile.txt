@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+    stages {
+        stage('Run JMeter Tests') {
+            steps {
+                sh 'jmeter -n -t Jpet_Jmeter_Jenkins_.jmx -l results_Jpet_Jmeter_Jenkins_.jtl'
+            }
+        }
+    }
+}
