@@ -1,10 +1,18 @@
 pipeline {
     agent any
     stages {
-        stage('Run JMeter Tests') {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/CHANZ12/Jmeterscript.git'
+            }
+        }
+        stage('Run JMeter Test') {
             steps {
                 sh 'jmeter -n -t Jpet_Jmeter_Jenkins_.jmx -l results_Jpet_Jmeter_Jenkins_.jtl'
             }
         }
     }
 }
+
+
+
